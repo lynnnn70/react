@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="/src/slider.css" />
+  </head>
+  <body>
+    <fieldset>
+      <div class="slider-container">
+        <!-- 二選一 Slider (Sex) -->
+        <div class="slider-label">
+          <span>Sex:</span>
+          <span class="slider-value" id="sexValue">male</span>
+        </div>
+        <div class="slider-wrapper" data-tags="male, female">
+          <input
+            type="range"
+            class="slider"
+            data-type="binary"
+            min="0"
+            max="1"
+            step="1"
+            value="0"
+          />
+        </div>
+      </div>
+
+      <div class="slider-container">
+        <!-- 數值範圍 Slider (Age) -->
+        <div class="slider-label">
+          <span>Age:</span>
+          <span class="slider-value" id="ageValue">25</span>
+        </div>
+        <div class="slider-wrapper">
+          <input
+            type="range"
+            class="slider"
+            data-type="range"
+            min="0"
+            max="80"
+            value="25"
+          />
+        </div>
+        <div class="slider-tags" data-tags="0, 80"></div>
+      </div>
+
+      <div class="slider-container">
+        <!-- 多選項 Slider (Embarked) -->
+        <div class="slider-label">
+          <span>Embarked:</span>
+          <span class="slider-value" id="embarkedValue">C</span>
+        </div>
+        <div class="slider-wrapper" data-tags="C, Q, S">
+          <input
+            type="range"
+            class="slider"
+            data-type="multi"
+            min="0"
+            max="2"
+            step="1"
+            value="0"
+          />
+        </div>
+        <div class="slider-tags" data-tags="C, Q, S"></div>
+      </div>
+    </fieldset>
+  </body>
+  <script src="/src/slider.js"></script>
+</html>

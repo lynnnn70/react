@@ -1,0 +1,33 @@
+table {
+    table-layout:fixed;
+    width: 100%;
+    border: 1px solid rgb(255, 0, 0);
+}
+
+th {
+    overflow: auto;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    border: 1px solid rgb(255, 136, 0);
+    background-color: rgb(255, 136, 0);
+    padding: 10px;
+}
+
+td {
+    overflow: auto;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    border: 1px solid rgb(0, 217, 255);
+    padding: 10px;
+    text-align: center;
+}
+
+tr:nth-child(2n) {
+    background-color: rgb(215, 248, 250);
+}
+
+tr:hover {
+    background-color: aqua;
+}
+
+
